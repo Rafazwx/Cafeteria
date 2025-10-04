@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+
+
+    <title>Café</title>
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="./videos/video.mp4.mp4" autoplay muted loop playsinLine preload="auto"></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a href="#">
+                <img src="./img/logo.png" alt="logo-cafeteria">
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#clients">Avaliações</a>
+                <a href="#address">Endereço</a>
+            </nav>
+
+            <!-- Carrinho no Header -->
+            <div class="carrinho-container">
+                <button id="btnCarrinho" class="carrinho-btn">
+                    🛒 <span id="carrinho-quantidade">0</span>
+                </button>
+                <div id="carrinho-dropdown" class="carrinho-dropdown">
+                    <h3>Seu Carrinho</h3>
+                    <div id="carrinho-itens"></div>
+                    <p id="carrinho-total"><strong>Total: R$ 0,00</strong></p>
+                    <button id="finalizarCompra">Finalizar Compra no WhatsApp</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+
+
+    <section class="caixa-principal" id="home">
+        <div>
+            <h3>O melhor café da Região</h3>
+            <P> Se você esta passando na Ragueb, Descubra o sabor que conquista paladares! Nosso café é preparado com
+                grãos selecionados, torrados na
+                medida certa para realçar o aroma e a intensidade que só um café de verdade pode oferecer.
+
+                Seja para começar o dia com energia, fazer uma pausa no trabalho ou compartilhar bons momentos, aqui
+                você encontra a combinação perfeita de qualidade, tradição e carinho em cada xícara.
+
+                Venha experimentar e entender por que somos reconhecidos como o melhor café da região!</P>
+            <a class="botao-link">Pegue o seu agora</a>
+        </div>
+    </section>
+
+    <section class="caixa-sobre" id="about">
+        <h2 class="titulo"> <span> Sobre </span> nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="./img/about-img.jpg" alt="">
+            </div>
+
+            <div class="sobre-texto">
+                <h3>O que faz nosso café especial</h3>
+                <p>Nosso diferencial está na combinação de qualidade, tradição e cuidado em cada etapa.
+                    Trabalhamos apenas com grãos selecionados, torrados artesanalmente para preservar aroma e sabor.
+                    Garantimos sempre frescor e incentivamos práticas sustentáveis, valorizando produtores locais e
+                    respeitando o meio ambiente.
+
+                    Assim, oferecemos não apenas um café, mas uma experiência única.</p>
+                <p>Porque não é apenas café, é paixão em cada grão.
+                    Selecionamos os melhores grãos, torramos artesanalmente e servimos sempre fresco.
+                    O resultado? Aroma irresistível, sabor marcante e uma experiência única em cada xícara.</p>
+                <a class="botao-link">Saiba Mais</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2 class="titulo">Nosso <span>Menu</span></h2>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/menu-1.png" alt="item-1">
+                <h3>Latte (ou café com leite cremoso)</h3>
+                <div class="price"> R$ 9,99 <span> R$ 14,99</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="./img/menu-2.png" alt="item-2">
+                <h3>Café Espresso </h3>
+                <div class="price"> R$ 5,20 <span> R$ 6,99</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="./img/menu-3.png" alt="item-3">
+                <h3>🍮 Especiais
+
+                    Cold Brew</h3>
+                <div class="price"> R$ 15,50 <span> R$ 18,00</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="./img/menu-4.png" alt="item-4">
+                <h3>☕ Café coado</h3>
+                <div class="price"> R$ 11,99 <span> R$ 14,99</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="./img/menu-5.png" alt="item-5">
+                <h3>❄️ Versões geladas (bem pedidas no calor)
+
+                    Iced Coffee</h3>
+                <div class="price"> R$ 13,99 <span> R$ 15,99</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="./img/menu-6.png" alt="item-6">
+                <h3>🥛 Latte (ou café com leite cremoso)</h3>
+                <div class="price"> R$ 11,20 <span> R$ 15,99</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="./img/bolo.jpg" alt="item-6">
+                <h3> 🥧 Torta de Frutas – Fruit Pie</h3>
+                <div class="price"> R$ 14,20 <span> R$ 15,99</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="./img/pao-queijo.jpg" alt="item-6">
+                <h3> 🧀 Pão de queijo (unidade/porção individual)</h3>
+                <div class="price"> R$ 17,20 <span> R$ 19,99</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="./img/Croissant.jpg" alt="item-6">
+                <h3> 🥐 Croissant (tradicional, simples)</h3>
+                <div class="price"> R$ 12,20 <span> R$ 15,99</span></div>
+                <a href="#" class="btn">Adicione ao Carrinho</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="address" id="clients">
+        <h2 class="titulo"> Nossos <span> Clientes</span></h2>
+        <div class="box-container">
+
+            <!-- Cliente 1 -->
+            <div class="box">
+                <img src="./img/quote-img.png" alt="comentario">
+                <p>"Adoro vir aqui! ☕✨ O ambiente é super acolhedor, com uma música suave que deixa qualquer momento
+                    mais relaxante. É o lugar perfeito para ler um livro, trabalhar ou simplesmente aproveitar o tempo
+                    com amigos. 🪴💛"</p>
+                <img src="./img/thayna (1).jpeg" alt="foto-cliente" class="cliente">
+                <h3>Cristian & Thayna</h3>
+                <div class="stars">
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/pulsar-gradient/30/star-half-empty.png" alt="meia-estrela" />
+                </div>
+            </div>
+
+            <!-- Cliente 2 -->
+            <div class="box">
+                <img src="./img/quote-img.png" alt="comentario">
+                <p>"O café é simplesmente incrível! 😍 Cada xícara é preparada com cuidado, com aquele aroma que
+                    desperta os sentidos. Sempre fico animado só de sentir o cheirinho do café fresco. ☕🔥"</p>
+                <img src="./img/cicera (1).jpeg" alt="foto-cliente" class="cliente">
+                <h3>Adriana Alves</h3>
+                <div class="stars">
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                </div>
+            </div>
+
+            <!-- Cliente 3 -->
+            <div class="box">
+                <img src="./img/quote-img.png" alt="comentario">
+                <p>"O atendimento aqui é nota 10! 🙌 Todos são super simpáticos e atenciosos, sempre prontos para
+                    indicar a melhor opção do cardápio. Dá vontade de voltar só para bater um papo com a equipe! 😊💬💖"
+                </p>
+                <img src="./img/pamela (1).jpeg" alt="foto-cliente" class="cliente">
+                <h3>Pamela & Edson</h3>
+                <div class="stars">
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/pulsar-gradient/30/star-half-empty.png" alt="meia-estrela" />
+                </div>
+            </div>
+
+            <!-- Cliente 4 -->
+            <div class="box">
+                <img src="./img/quote-img.png" alt="comentario">
+                <p>"A variedade de produtos é maravilhosa! 🥐🍰 Pães, bolos, croissants e doces sempre fresquinhos,
+                    combinando perfeitamente com o café. É impossível escolher só um – eu quero provar tudo! 🤤"</p>
+                <img src="./img/rafa (1).jpeg" alt="foto-cliente" class="cliente">
+                <h3>Rafael Silva</h3>
+                <div class="stars">
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+
+                </div>
+            </div>
+
+            <!-- Cliente 5 -->
+            <div class="box">
+                <img src="./img/quote-img.png" alt="comentario">
+                <p>Amei trabalhar neste café! O ambiente é super aconchegante. As opções de café e lanches são
+                    deliciosas. Com certeza voltarei sempre que precisar de um espaço agradável para trabalhar!</p>
+                <img src="./img/maysaa (1).jpeg" alt="foto-cliente" class="cliente">
+                <h3>Maysa Nunes</h3>
+                <div class="stars">
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/pulsar-gradient/30/star-half-empty.png" alt="meia-estrela" />
+                </div>
+            </div>
+
+            <!-- Cliente 6 -->
+            <div class="box">
+                <img src="./img/quote-img.png" alt="comentario">
+                <p>"Sempre que venho aqui, saio com um sorriso no rosto 😄💛. É meu lugar favorito para começar o dia ou
+                    dar aquela pausa merecida. Atmosfera incrível, café delicioso e gente boa: a combinação perfeita!
+                    ☕🌿"</p>
+                <img src="./img/paty (1).jpeg" alt="foto-cliente" class="cliente">
+                <h3>Paty & Daniel</h3>
+                <div class="stars">
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/keek/30/star.png" alt="star" />
+                    <img src="https://img.icons8.com/pulsar-gradient/30/star-half-empty.png" alt="meia-estrela" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="address" id="address">
+        <h2 class="titulo"><span>Nosso</span> Endereço</h2>
+        <!-- mapa do google-->
+        <div class="mapa-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1537.2619792508724!2d-46.43892904753933!3d-23.595517282582986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6f0001151239%3A0x52a344b19523b97b!2sShopping%20Negreiros!5e0!3m2!1spt-BR!2sbr!4v1759502174780!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <section class="contato" id="contato">
+        <h2 class="titulo">Entre em <span>Contato</span></h2>
+        <form id="formContato">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="./img/logo.png" alt="logo-cafeteria">
+                <h2>CAFENA</h2>
+            </div>
+
+            <!-- Links -->
+            <nav class="footer-nav">
+                <a href="#home">HOME</a> |
+                <a href="#about">CONHEÇA</a> |
+                <a href="#menu">BOLOS</a> |
+                <a href="#menu">CARDÁPIO</a> |
+                <a href="#address">CONTATO</a> |
+            </nav>
+
+            <!-- Direitos autorais -->
+            <p class="copyright">© 2025 | Todos os direitos reservados.</p>
+
+            <!-- Ícones sociais -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/rafaell.2304" target="_blank" rel="" noopener noreferrer><img
+                        src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/tiktok.png" alt="TikTok"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube"></a>
+            </div>
+
+            <!-- Botão WhatsApp -->
+            <a href="https://wa.me/5511954905736?text=Olá! Quero mais informações sobre os cafés."
+                class="whatsapp-footer" target="_blank">
+                <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp"> WHATSAPP
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511954905736?text=Olá! Quero mais informações sobre os cafés." class="whatsapp-button"
+        target="_blank">
+        <img src="https://img.icons8.com/color/20/whatsapp.png" alt="WhatsApp">
+    </a>
+    <!-- Container para notificações customizadas -->
+    <div id="notificacoes"
+        style="position: fixed; top: 10px; right: 10px; z-index: 150; display: flex; flex-direction: column; gap: 10px;">
+    </div>
+</body>
+
+</html>
+
+
+
+<script src="./scripts.js"></script>

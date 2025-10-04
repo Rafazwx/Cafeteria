@@ -1,0 +1,119 @@
+/* ===== Responsividade ===== */
+
+/* Celulares pequenos (até 480px) */
+  @media (max-width: 480px) {
+  .caixa-principal div h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .caixa-principal div p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .header section nav {
+    display: none; /* esconde menu para hambúrguer futuramente */
+  }
+
+  .menu .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu .box-container .box {
+    padding: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  .caixa-sobre .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .caixa-sobre .sobre-container .sobre-texto p,
+  .caixa-sobre .sobre-container .sobre-texto h3 {
+    font-size: 1.4rem;
+  }
+
+  .address .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contato .titulo {
+    font-size: 2rem;
+  }
+
+  #formContato {
+    width: 100%;
+  }
+
+  #formContato input,
+  #formContato textarea {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+  .header section {
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .caixa-principal {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .caixa-principal div h3 {
+    font-size: 3.5rem;
+  }
+
+  .caixa-principal div p {
+    font-size: 1.6rem;
+  }
+
+  .menu .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  .address .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  .contato {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Celulares grandes e tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .header section {
+    gap: 30px;
+  }
+
+  .caixa-principal div h3 {
+    font-size: 4.5rem;
+  }
+
+  .caixa-principal div p {
+    font-size: 1.8rem;
+  }
+
+  .menu .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  .address .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  #formContato {
+    width: 90%;
+  }
+}
